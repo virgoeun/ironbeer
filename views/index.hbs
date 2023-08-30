@@ -1,0 +1,63 @@
+
+<!-- views/index.hbs -->
+
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-md-4">
+      <div class="card"> 
+        <img class="card-img-top" src="http://kenikin.com/w/nba-players-Wallpaper-Full-HD-number-yM1.jpg" alt="NBA players">
+        <div class="card-body">
+          <h5 class="card-title">Players</h5>
+          <p class="card-text">Check the top NBA players, according to Ironhack Curriculum staff.</p>
+          <a href="/player" class="btn btn-primary">See Players</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI"
+            alt="NBA teams">
+        <div class="card-body">
+          <h5 class="card-title">Teams</h5>
+          <p class="card-text">Here we can check all NBA Teams</p>
+          <a href="/team" class="btn btn-primary">See Teams</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    {{!-- <h1>{{firstName}}</h1> 
+  <h1>{{lastName}}</h1> 
+  <h1>{{{bootcamp}}}</h1>
+  <h1>hello{{name}} </h1>
+  {{#if lastName}} <!--checking condition -->
+  <h2>last name exist as it is: {{lastName}}</h2>
+
+  {{else}}
+  <p>please provide the lastname</p>
+  {{/if}} --}}
+    {{!-- <h1>Hello {{name}} {{lastName}}!</h1>
+    {{#if address}}
+      <h2>{{address}}</h2>
+    {{/if}}
+    {{#unless address}}
+      <h3>WARNING: We can't find the address!</h3>
+    {{/unless}}
+
+    {{#each cities}}
+      <p>{{@index}} {{this}}</p>
+    {{/each}}
+
+    {{#each address}}
+      <p>{{@value}} : {{this}}</p>
+    {{/each}}
+
+    {{#each address}}
+      <p>{{@key}}{{this}}</p>
+    {{/each}}
+    {{#with address}}
+      {{!-- go inside the object; don't need "{{address.street}}" --}}
+      {{!-- {{street}}
+      {{number}}
+    {{/with}} --}}
